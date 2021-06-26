@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.block {
+    width: 98px;
+    height: 98px;
+    background-color: brown;
+    margin: 2px;
+}
+.block-clicked {
+    width: 98px;
+    height: 98px;
+    background-color: rgb(54, 0, 0);
+    margin: 2px;
+}
+.block:hover {
+    opacity: 0.9;
+}
+.mat-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+}

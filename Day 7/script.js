@@ -54,20 +54,27 @@ for (book of library) {
 /*=====================================================================*/
 
 /*======================== TASK 5 ====================================*/
-var pi = 3.1423;
-console.log(pi * 3 * 2 * 21);
+const cylinder = {
+    area: function (r, h) {
+        return 3.1423 * r * r * h;
+    },
+};
+
+console.log(25, 35);
 /*=====================================================================*/
 
 /*======================== TASK 5 ====================================*/
 var library = [
-    { 
-        title: "The Road Ahead", 
-        author: "Bill Gates", 
-        libraryID: 1254 },
-    { 
-        title: "Walter Isaacson", 
-        author: "Steve Jobs", 
-        libraryID: 4264 },
+    {
+        title: "The Road Ahead",
+        author: "Bill Gates",
+        libraryID: 1254,
+    },
+    {
+        title: "Walter Isaacson",
+        author: "Steve Jobs",
+        libraryID: 4264,
+    },
     {
         title: "Mockingjay: The Final Book of The Hunger Games",
         author: "Suzanne Collins",
@@ -75,5 +82,4 @@ var library = [
     },
 ];
 
-var Output =  { author: "Walter Isaacson", libraryID: 4264, title: "Steve Jobs" }, { author: "Suzanne Collins", libraryID: 3245, title: "Mockingjay: The Final Book of The Hunger Games" }, { author: "The Road Ahead", libraryID: 1254, title: "Bill Gates" }]
 /*=====================================================================*/
