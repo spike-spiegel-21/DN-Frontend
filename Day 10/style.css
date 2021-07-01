@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(./images/attack-on-titan.jpg) center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    perspective: 1000px;
+    width: 40%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cards {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(./images/attack-on-titan-season-3-art-poster-how-to-watch-online-hulu-crunchyroll-funimation-01.jpg)
+        center/cover;
+    box-shadow: 1px 1px 6px 6px rgba(180, 175, 175, 0.24);
+}
+
+.cards .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cards .back img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 4px 4px rgba(100, 97, 97, 0.432);
+}
+
+.cards .front,
+.cards .back {
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.cards.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgba(51, 8, 0, 1);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 50%;
+        height: 90%;
+    }
+}
