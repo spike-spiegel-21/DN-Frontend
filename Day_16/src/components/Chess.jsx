@@ -36,15 +36,20 @@ const Chess = () => {
     }
 
     return (
-        <div className="board">
-            <Sw />
-            <Sb />
-            <Sw />
-            <Sb />
-            <Sw />
-            <Sb />
-            <Sw />
-            <Sb />
+        <div className="adjust">
+            <div>
+                <i>Day 16</i>
+            </div>
+            <div className="board">
+                <Sw />
+                <Sb />
+                <Sw />
+                <Sb />
+                <Sw />
+                <Sb />
+                <Sw />
+                <Sb />
+            </div>
         </div>
     );
 

@@ -7,6 +7,7 @@ const Card = () => {
 
     return (
         <div className="card">
+            <i>Day 16</i>
             <Image />
             <h2>React Card</h2>
             <p>This is a react card.</p>
